@@ -54,7 +54,7 @@ Bu dosya, tüm bağımlılık sisteminin kalbidir:
 - Bir sınıfa gerekli tüm bağımlılıkları otomatik olarak bulup gönderir
 - Scope adı verilen bir "işlem grubu" oluşturabilir
 
-Nasıl çalıştığını basitçe anlatmak gerekirse: Bir sınıfın (örneğin Notifier) ihtiyaç duyduğu tüm bağımlılıkları (Logger, IMessageService gibi) otomatik olarak bulup, o sınıfa gönderir. Bunu yaparken sınıfların konstruktör (yapıcı) metodlarına bakıp, "Bu sınıf hangi diğer sınıflara ihtiyaç duyuyor?" sorusunu sorar ve cevabına göre o sınıfları da hazırlayıp gönderir.
+Nasıl çalıştığını basitçe anlatmak gerekirse: Bir sınıfın (örneğin Notifier) ihtiyaç duyduğu tüm bağımlılıkları (Logger, IMessageService gibi) otomatik olarak bulup, o sınıfa gönderir. Bunu yaparken sınıfların constructor (yapıcı) metodlarına bakıp, "Bu sınıf hangi diğer sınıflara ihtiyaç duyuyor?" sorusunu sorar ve cevabına göre o sınıfları da hazırlayıp gönderir.
 ## ScopedContainer.cs
 Bu dosya, belli bir işlem grubu (scope) için özel bir konteynerdir:
 
